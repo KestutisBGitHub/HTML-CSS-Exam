@@ -7,10 +7,18 @@
 html {
     font-family: 'Inter', sans-serif;
     font-size: 62.5%;
-    max-width: 42.8rem;
-    width: 100%;
-    margin: 0 auto;
+
     
+}
+
+body {
+    min-width: 42.8rem;
+    border: 1 solid;
+    margin: 0 auto;
+    display: block;
+    @include xl {
+        max-width: 114rem;
+    }
 }
 
 .header {
@@ -30,6 +38,10 @@ html {
         &__nav {
             width: 2.4rem;
             display: block;
+
+            @include xl {
+                display: none;
+            }
             
             &--menu {
                 height: 0.4rem;
@@ -40,9 +52,29 @@ html {
         }
 
         &__navdesktop {
-           display: none;
+                display: none;
+
+           @include xl {
+                display: contents;
+                display: flex;
+                font-size: 2rem;
+           }
         }
     }
 
+    @include xl {
+        margin: 7rem 8rem;
+    }
 
 }
+
+.menu-link {
+        color: $coloer-letters  ;
+        text-decoration: none;
+        -webkit-text-stroke: 0.05rem;
+        -webkit-text-stroke-color: $color-letter-borders;
+        margin-left: 2.8rem;
+    }
+.red {
+        color: $color-pink;
+    }
