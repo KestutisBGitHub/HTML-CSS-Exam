@@ -1,0 +1,14 @@
+.btn {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: $color-title;
+    text-decoration: none;
+    display: inline-block;
+    border: 0.4rem solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #FF3998, #FF8139);
+    padding: 2.2rem 5.6rem 2.3rem 5.6rem;
+    margin: 3.2rem 0;
+
+}

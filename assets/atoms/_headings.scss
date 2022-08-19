@@ -3,12 +3,14 @@
     font-weight: 900;
     line-height: 5.809rem;
     color: $color-title;
-
+    margin: 3.8rem 0 3.1rem 0;
+    
     @include xl {
         font-size: 9.6rem;
         line-height: 11.618rem;
     }
 }
+
 
 .h4 {
     color: $color-pink;
@@ -22,12 +24,15 @@
     font-weight: 500;
     font-size: 4rem;
     line-height: 4.841rem;
+    margin: 2.4rem 0
+    ;
 }
 .h3 {
     color: $color-title;
     font-weight: 900;
     font-size: 5.6rem;
     line-height: 6.777rem;
+    margin: 2.4rem 0;
 }
 .h5 {
     color: $coloer-letters;

@@ -16,13 +16,13 @@ html {
     
 }
 
-body {
+.body {
     min-width: 42.8rem;
     border-radius: 0.5rem;
-    
+    background-color: white;
     margin: 0 auto;
     display: block;
-    background-color: white;
+    
 
     @include xl {
         max-width: 114rem;
@@ -30,7 +30,7 @@ body {
 }
 
 .header {
-    padding: 3.2rem;
+    padding: 3.2rem 3.2rem 4.2rem 3.2rem;
     
     
     &__wrapper {
@@ -86,3 +86,44 @@ body {
 .red {
         color: $color-pink;
     }
+
+.hero {
+    display: flex;
+
+    //display: grid;
+    //grid-template-columns: 3fr 1fr ;
+
+    &__text {
+        min-width: 27.9rem;
+        margin: 3.8rem 12.7rem 8rem 2.7rem;
+    }
+
+    &__graphic--img {
+        height: 27.8rem;
+
+    }
+}
+.upsell {
+    background-image: url(./imgfolder/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height:32.6rem;
+    //padding: 12.2rem 3.2rem 3.2rem 3.2rem;
+
+    &__p {
+        color: $color-title;
+        padding: 0 3.2rem 3.2rem 3.2rem;
+        
+    }
+
+    &__h2 {
+        margin-bottom: 1.6rem;
+        padding: 12.2rem 3.2rem 1.6rem 3.2rem;
+        
+    }
+
+}
+
+
