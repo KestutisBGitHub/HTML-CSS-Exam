@@ -154,4 +154,21 @@ html {
     }
 }
 
+.press {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 6.4rem 3.2rem 5.6rem 3.2rem;
+    row-gap: 2.8rem;
+     
+
+    &__hide {
+        display: none;
+    
+    }
+
+    &__img {
+        margin: 0 auto;
+    }
+
+}
 
