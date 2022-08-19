@@ -133,6 +133,7 @@ html {
 @media (min-width: 768px) {
   .body {
     max-width: 114rem;
+    padding: 0 8rem;
   }
 }
 
@@ -175,7 +176,7 @@ html {
 }
 @media (min-width: 768px) {
   .header {
-    padding: 7rem 8rem;
+    padding: 7rem 0rem;
   }
 }
 
@@ -198,6 +199,11 @@ html {
   min-width: 27.9rem;
   margin: 3.8rem 12.7rem 8rem 2.7rem;
 }
+@media (min-width: 768px) {
+  .hero__text {
+    margin: 3.2rem 0 4.1rem 0;
+  }
+}
 .hero__graphic--img {
   height: 27.8rem;
 }
@@ -207,13 +213,21 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 32.6rem;
+  min-height: 32.6rem;
 }
 .upsell__p {
   color: #111111;
-  padding: 0 3.2rem 3.2rem 3.2rem;
+  margin: 0;
 }
 .upsell__h2 {
-  margin-bottom: 1.6rem;
-  padding: 12.2rem 3.2rem 1.6rem 3.2rem;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .upsell {
+    display: block;
+    background-size: fit;
+    height: 32rem;
+    width: 100%;
+    border-radius: 1.6rem;
+  }
 }/*# sourceMappingURL=style.css.map */
