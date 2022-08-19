@@ -252,5 +252,7 @@ html {
 @media (min-width: 768px) {
   .press {
     display: flex;
+    padding: 12rem 0;
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=style.css.map */

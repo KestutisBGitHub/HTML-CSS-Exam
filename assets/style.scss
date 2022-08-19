@@ -182,6 +182,8 @@ html {
 
     @include xl {
         display: flex;
+        padding: 12rem 0 ;
+        justify-content: space-between;
 
 
     }
