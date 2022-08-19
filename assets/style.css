@@ -238,9 +238,19 @@ html {
   padding: 6.4rem 3.2rem 5.6rem 3.2rem;
   row-gap: 2.8rem;
 }
-.press__hide {
+.press__paslept {
   display: none;
+}
+@media (min-width: 768px) {
+  .press__paslept {
+    display: unset;
+  }
 }
 .press__img {
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .press {
+    display: flex;
+  }
 }/*# sourceMappingURL=style.css.map */
