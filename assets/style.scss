@@ -154,7 +154,11 @@ html {
     grid-template-columns: repeat(2, 1fr);
     padding: 6.4rem 3.2rem 5.6rem 3.2rem;
     row-gap: 2.8rem;
-    justify-items: start;
+    
+    max-width: 100%;
+
+    
+
 
 
 
@@ -175,7 +179,12 @@ html {
      }
 
     &__img {
-        margin: 0 auto;
+        margin-right: 3.2rem;
+        align-self: flex-start;
+        
+     
+        
+
     }
 
     @include xl {
