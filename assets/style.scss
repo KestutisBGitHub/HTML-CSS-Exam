@@ -120,37 +120,32 @@ html {
     background-size: cover;
     background-position: center;
 
-    min-height:32.6rem;
-    //padding: 12.2rem 0 3.2rem 0;
+    min-height:17.2rem;
+    padding: 12.2rem 3.2rem 3.2rem 3.2rem;
 
     &__p {
         color: $color-title;
-        //padding: 0 3.2rem 3.2rem 3.2rem;
+       
         margin: 0;
         
     }
 
     &__h2 {
         margin: 0;
-        //padding: 12.2rem 3.2rem 1.6rem 3.2rem;
+   
         
     }
 
     @include xl {
         display: block;
         background-size: fit;
-        //margin: 0 8rem;
-        height: 32rem;
-        width: 100%;
+        padding: 15.4rem 0 6.4rem 6.4rem;
+        
+        min-height: 10.2rem;
+        
         border-radius: 1.6rem;
 
-      //  &__h2 {
-            //padding: 15.4rem 6.4rem 2.4rem 6.4rem;
-      //  }
 
-     //   &__p {
-            //padding: 0 6.4rem 6.4rem 6.4rem;
-    //    }
     }
 }
 
@@ -159,6 +154,9 @@ html {
     grid-template-columns: repeat(2, 1fr);
     padding: 6.4rem 3.2rem 5.6rem 3.2rem;
     row-gap: 2.8rem;
+    justify-items: start;
+
+
 
     
      

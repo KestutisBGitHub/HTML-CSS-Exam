@@ -213,7 +213,8 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 32.6rem;
+  min-height: 17.2rem;
+  padding: 12.2rem 3.2rem 3.2rem 3.2rem;
 }
 .upsell__p {
   color: #111111;
@@ -226,8 +227,8 @@ html {
   .upsell {
     display: block;
     background-size: fit;
-    height: 32rem;
-    width: 100%;
+    padding: 15.4rem 0 6.4rem 6.4rem;
+    min-height: 10.2rem;
     border-radius: 1.6rem;
   }
 }
@@ -237,6 +238,7 @@ html {
   grid-template-columns: repeat(2, 1fr);
   padding: 6.4rem 3.2rem 5.6rem 3.2rem;
   row-gap: 2.8rem;
+  justify-items: start;
 }
 .press__paslept {
   display: none;
