@@ -6,6 +6,7 @@
 @import "./atoms/btn";
 @import "./atoms/headings";
 @import "./atoms/paragraph";
+@import "./molecules/cards";
 
 
 html {
@@ -29,7 +30,7 @@ html {
     
 
     @include xl {
-        max-width: 114rem;
+        max-width: 144rem;
         padding: 0 8rem;
     }
 }
@@ -224,3 +225,25 @@ html {
     }
 }
 
+.showcase {
+    margin-left: 3.2rem;
+    padding-bottom: 9.2rem;
+
+    &__h2 {
+        margin: 0;
+    }
+    &__p {
+        margin: 1.6rem 0 4rem 0;
+
+        &__link {
+            text-decoration: none;
+            color: $coloer-letters;
+        }
+    }
+
+    @include xl {
+        min-width: 128rem;
+        margin-left: 0;
+        padding-bottom: 12rem;
+    }
+}
