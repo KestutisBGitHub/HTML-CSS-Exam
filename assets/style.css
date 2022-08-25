@@ -108,6 +108,13 @@ table {
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.936rem;
+  margin-bottom: 2.8rem;
+  margin-top: 4rem;
+}
+@media (min-width: 1200px) {
+  .h5 {
+    margin-top: 0;
+  }
 }
 
 .p {
@@ -115,6 +122,11 @@ table {
   font-weight: 400;
   font-size: 2rem;
   line-height: 3rem;
+}
+
+.footer__color {
+  color: #999999;
+  margin-bottom: 2.4rem;
 }
 
 .showcase__cards {
@@ -350,4 +362,61 @@ html {
     margin-left: 0;
     padding-bottom: 12rem;
   }
+}
+
+.footer {
+  padding: 6.4rem 0 10.5rem 3.2rem;
+}
+.footer__top__right {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__top__right__ul {
+  flex: 50%;
+}
+@media (min-width: 1200px) {
+  .footer__top__right__ul {
+    flex: 25%;
+  }
+}
+.footer__top__left__p {
+  margin: 3rem 0 3.2rem 0;
+}
+.footer__botom__right {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .footer__botom__right {
+    display: unset;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__top {
+    display: flex;
+  }
+  .footer__top__left {
+    flex: 50%;
+    margin-top: 12rem;
+  }
+  .footer__top__right {
+    flex: 50%;
+    margin-top: 12rem;
+  }
+  .footer__botom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12.3rem;
+  }
+}
+
+.li a {
+  text-decoration: none;
+  color: #555555;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.fa-brands {
+  margin-right: 1.6rem;
 }/*# sourceMappingURL=style.css.map */

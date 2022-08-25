@@ -39,4 +39,10 @@
     font-weight: 700;
     font-size: 1.6rem;
     line-height: 1.936rem;
+    margin-bottom: 2.8rem;
+    margin-top: 4rem;
+
+    @include xl {
+        margin-top: 0;
+    }
 }

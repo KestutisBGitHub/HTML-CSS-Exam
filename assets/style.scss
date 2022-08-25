@@ -247,3 +247,63 @@ html {
         padding-bottom: 12rem;
     }
 }
+
+.footer {
+    padding: 6.4rem 0 10.5rem 3.2rem  ;
+
+    &__top__right {
+        display:flex;
+        flex-wrap: wrap;
+
+        &__ul {
+            flex: 50%;
+
+            @include xl {
+                flex: 25%;
+            }
+        }
+    }
+
+    &__top__left__p {
+        margin: 3rem 0 3.2rem 0;
+    }
+    
+    &__botom__right {
+        display: none;
+
+        @include xl {
+            display: unset;
+        }
+    }
+
+    @include xl {
+        &__top {
+            display: flex;
+
+            &__left {
+                flex: 50%;
+                margin-top: 12rem;
+            }
+            &__right {
+                flex: 50%;
+                margin-top: 12rem;
+            }
+        }
+
+        &__botom {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 12.3rem;
+        }
+    }
+}
+.li a {
+    text-decoration: none;
+    color: $coloer-letters;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+.fa-brands {
+    margin-right: 1.6rem;
+}
