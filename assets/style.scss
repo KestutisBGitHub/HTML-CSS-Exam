@@ -93,22 +93,50 @@ html {
     }
 
 .hero {
-    display: flex;
-
+    margin: 0 0 8rem 3.2rem;
+    min-width: 40rem;
+    display: grid;
+    grid-template-columns: 68.5% 31.5%;
+    //gap: 4.75%;
+    
+    //display: flex;
     //display: grid;
     //grid-template-columns: 3fr 1fr ;
 
     &__text {
-        min-width: 27.9rem;
-        margin: 3.8rem 12.7rem 8rem 2.7rem;
+        //width: 68.5%;
+       //margin: 3.8rem 12.7rem 8rem 3.2rem;
+       margin-top: 3.8rem;
 
         @include xl {
-            margin: 3.2rem 0 4.1rem 0;
+           // margin: 3.2rem 0 4.1rem 0;
         }
     }
+    &__graphic {
+        overflow: hidden;
 
-    &__graphic--img {
-        height: 27.8rem;
+        &--img {
+            //align-self: flex-start ;
+    
+           // width: 25.75%;
+            max-height: 27.8rem;
+            //display: block;
+            //overflow: hidden;
+        }
+        
+    }
+
+
+
+    @include xl {
+        min-width: 100%;
+        grid-template-columns: 50% 50%;
+        max-height: 51.9rem;
+        margin: 11.2rem 16rem 18.2rem 0 ;
+
+        &__graphic--img {
+            max-height: 51.9rem;
+        }
 
     }
 

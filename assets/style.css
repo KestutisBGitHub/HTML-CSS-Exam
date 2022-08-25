@@ -193,19 +193,30 @@ html {
 }
 
 .hero {
-  display: flex;
+  margin: 0 0 8rem 3.2rem;
+  min-width: 40rem;
+  display: grid;
+  grid-template-columns: 68.5% 31.5%;
 }
 .hero__text {
-  min-width: 27.9rem;
-  margin: 3.8rem 12.7rem 8rem 2.7rem;
+  margin-top: 3.8rem;
 }
-@media (min-width: 1200px) {
-  .hero__text {
-    margin: 3.2rem 0 4.1rem 0;
-  }
+.hero__graphic {
+  overflow: hidden;
 }
 .hero__graphic--img {
-  height: 27.8rem;
+  max-height: 27.8rem;
+}
+@media (min-width: 1200px) {
+  .hero {
+    min-width: 100%;
+    grid-template-columns: 50% 50%;
+    max-height: 51.9rem;
+    margin: 11.2rem 16rem 18.2rem 0;
+  }
+  .hero__graphic--img {
+    max-height: 51.9rem;
+  }
 }
 
 .upsell {
