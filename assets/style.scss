@@ -1,0 +1,331 @@
+@import "./base/reset";
+@import "./base/variables";
+
+@import "./mixins/media";
+
+@import "./atoms/btn";
+@import "./atoms/headings";
+@import "./atoms/paragraph";
+@import "./molecules/cards";
+
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+    background-color: #e1e1e1;
+
+    
+}
+
+.body {
+    min-width: 42.8rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    margin: 0 auto;
+    display: block;
+
+    
+    
+
+    
+
+    @include xl {
+        max-width: 144rem;
+        padding: 0 8rem;
+    }
+}
+
+.header {
+    padding: 3.2rem 3.2rem 4.2rem 3.2rem;
+    
+    
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--logo {
+            width: 19.8rem;
+            height: 3.6rem;
+        }
+
+        &__nav {
+            width: 2.4rem;
+            display: block;
+
+            @include xl {
+                display: none;
+            }
+            
+            &--menu {
+                height: 0.4rem;
+                background-color: #999999;
+                margin: 5px 0;
+                border-radius: 25px;
+            }
+        }
+
+        &__navdesktop {
+                display: none;
+
+           @include xl {
+                display: contents;
+                display: flex;
+                font-size: 2rem;
+           }
+        }
+    }
+
+    @include xl {
+        padding: 7rem 0rem;
+    }
+
+}
+
+.menu-link {
+        color: $coloer-letters  ;
+        text-decoration: none;
+        -webkit-text-stroke: 0.05rem;
+        -webkit-text-stroke-color: $color-letter-borders;
+        margin-left: 2.8rem;
+    }
+.red {
+        color: $color-pink;
+    }
+
+.hero {
+    margin: 0 0 8rem 3.2rem;
+    min-width: 40rem;
+    display: grid;
+    grid-template-columns: 68.5% 31.5%;
+
+
+    &__text {
+   
+       margin-top: 3.8rem;
+
+        @include xl {
+           // margin: 3.2rem 0 4.1rem 0;
+        }
+    }
+    &__graphic {
+        overflow: hidden;
+
+        &--img {
+            //align-self: flex-start ;
+    
+           // width: 25.75%;
+            max-height: 27.8rem;
+            //display: block;
+            //overflow: hidden;
+        }
+        
+    }
+
+
+
+    @include xl {
+        min-width: 100%;
+        grid-template-columns: 50% 50%;
+        max-height: 51.9rem;
+        margin: 11.2rem 16rem 18.2rem 0 ;
+
+        &__graphic--img {
+            max-height: 51.9rem;
+        }
+
+    }
+
+    
+}
+.upsell {
+    background-image: url(./imgfolder/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    min-height:17.2rem;
+    padding: 12.2rem 3.2rem 3.2rem 3.2rem;
+
+    &__p {
+        color: $color-title;
+       
+        margin: 0;
+        
+    }
+
+    &__h2 {
+        margin: 0;
+   
+        
+    }
+
+    @include xl {
+        display: block;
+        background-size: fit;
+        padding: 15.4rem 0 6.4rem 6.4rem;
+        
+        min-height: 10.2rem;
+        
+        border-radius: 1.6rem;
+
+
+    }
+}
+
+.press {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 6.4rem 3.2rem 5.6rem 3.2rem;
+    row-gap: 2.8rem;
+    
+    max-width: 100%;
+
+    
+
+
+
+
+    
+     
+
+    &__paslept {
+        //visibility: hidden;
+        //grid-row: 3;
+        display: none;
+
+        @include xl {
+            //visibility: visible;
+            display: unset;
+        }
+
+     
+     }
+
+    &__img {
+        margin-right: 3.2rem;
+        align-self: flex-start;
+        
+     
+        
+
+    }
+
+    @include xl {
+        display: flex;
+        padding: 12rem 0 ;
+        justify-content: space-between;
+
+
+    }
+}
+
+.showcase {
+    margin-left: 3.2rem;
+    padding-bottom: 9.2rem;
+
+    &__h2 {
+        margin: 0;
+    }
+    &__p {
+        margin: 1.6rem 0 4rem 0;
+
+        &__link {
+            text-decoration: none;
+            color: $coloer-letters;
+        }
+    }
+
+    @include xl {
+        min-width: 128rem;
+        margin-left: 0;
+        padding-bottom: 12rem;
+    }
+}
+
+.footer_upsell {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-left: 3.2rem;
+    
+
+    &__text {
+        
+        min-width:20rem;
+    }
+    &__graphic {
+        overflow: hidden;
+        min-height: 46.7rem;
+        margin: 0 auto;
+
+
+    }
+
+    @include xl {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+.footer {
+    padding: 6.4rem 0 10.5rem 3.2rem  ;
+
+    &__top__right {
+        display:flex;
+        flex-wrap: wrap;
+
+        &__ul {
+            flex: 50%;
+
+            @include xl {
+                flex: 25%;
+            }
+        }
+    }
+
+    &__top__left__p {
+        margin: 3rem 0 3.2rem 0;
+    }
+    
+    &__botom__right {
+        display: none;
+
+        @include xl {
+            display: unset;
+        }
+    }
+
+    @include xl {
+        &__top {
+            display: flex;
+
+            &__left {
+                flex: 50%;
+                margin-top: 12rem;
+            }
+            &__right {
+                flex: 50%;
+                margin-top: 12rem;
+            }
+        }
+
+        &__botom {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 12.3rem;
+        }
+    }
+}
+.li a {
+    text-decoration: none;
+    color: $coloer-letters;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+.fa-brands {
+    margin-right: 1.6rem;
+}
+
+a:hover {
+    color: blue;
+}

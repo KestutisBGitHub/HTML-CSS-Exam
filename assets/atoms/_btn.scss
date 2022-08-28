@@ -1,0 +1,38 @@
+.btn {
+/*     
+    display: inline-block;
+    border: 0.4rem solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #FF3998, #FF8139);
+    padding: 2.2rem 5.6rem 2.3rem 5.6rem;
+    margin: 3.2rem 0; */
+
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: $color-title;
+    text-decoration: none;
+    background-color: white;
+    //padding: 2.3rem 5.6rem;
+    height: 3rem;
+    width: 7.6rem;
+    border-radius: 5rem;
+    display: block;
+    text-align: center;
+    padding: 1.9rem 5.2rem;
+        
+
+}
+.hero__text--border {
+    background-image: url(/assets/imgfolder/background.svg);
+    width: 18rem;
+    min-height: 6.7rem;
+    border-radius: 5rem;
+    //margin: 0.4rem;
+    padding: 0.4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 3.2rem;
+    
+
+}
