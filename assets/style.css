@@ -383,6 +383,25 @@ html {
   }
 }
 
+.footer_upsell {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-left: 3.2rem;
+}
+.footer_upsell__text {
+  min-width: 20rem;
+}
+.footer_upsell__graphic {
+  overflow: hidden;
+  min-height: 46.7rem;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .footer_upsell {
+    grid-template-columns: 50% 50%;
+  }
+}
+
 .footer {
   padding: 6.4rem 0 10.5rem 3.2rem;
 }
@@ -438,4 +457,8 @@ html {
 
 .fa-brands {
   margin-right: 1.6rem;
+}
+
+a:hover {
+  color: blue;
 }/*# sourceMappingURL=style.css.map */
